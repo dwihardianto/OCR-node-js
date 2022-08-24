@@ -37,6 +37,8 @@ app.post("/upload", (req, res) => {
         await worker.load();
         await worker.loadLanguage("eng");
         await worker.initialize("eng");
+
+        //---Filtering Function---//
         // await worker.setParameters({
         //   tessedit_char_whitelist: "0123456789",
         // });
